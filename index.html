@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miner-推活本舖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+     <div class="wrap">
+
+        <header>
+        <nav> 
+             <div class="logo"><a href="#"><img src="/img/logo.png" alt=""></a></div>
+                <ul class="list-none">
+                    <li class="nav-link"><a href="new.html">最新消息</a></li>
+                    <li class="nav-link"><a href="#">推活專區</a></li>
+                    <li class="nav-link"><a href="#">用戶登入</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <button class="close-menu">✕</button>
+                    <ul>
+                        <li><a href="new.html">最新消息</a></li>
+                         <li><a href="#">推活專區</a></li>
+                        <li><a href="#" class="mobile-login-link">用戶登入</a></li>
+                    </ul>
+            </div>
+            <div class="carousel">
+                <button class="arrow prev"><img src="/img/left_btn.svg" alt=""></button>
+
+                <div class="track">
+                 <div class="slide"><img src="img/oshikatsu01.png" alt="" /></div>
+                 <div class="slide"><img src="img/oshikatsu02.png" alt="" /></div>
+                 <div class="slide"><img src="img/oshikatsu03.png" alt="" /></div>
+                </div>
+
+                <button class="arrow next"> <img src="./img/right_btn.svg" alt=""></button>
+
+                    <div class="dots">
+                        <button class="dot" data-index="0"></button>
+                     <button class="dot" data-index="1"></button>
+                        <button class="dot" data-index="2"></button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="title"> <img src="/img/section_title.png" alt=""></div>
+                <section>
+                    <div class="card">
+                        <img src="/img/section_card_img1.png" alt="">
+                        <div class="card-active">
+                            <div class="like"><img src="/img/favorite_btn.svg" alt=""></div>
+                            <div class="comment"><img src="/img/comment_btn.svg" alt=""></div>
+                            <div class="share"><img src="/img/share_btn.svg" alt=""></div>
+                        </div>
+                        <div class="card-content">
+                            <h3>#推し活必備清單</h3>
+                            <p>人氣爆棚🔥快看看大家都在搶什麼，這些你不收藏嗎？</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/img/section_card_img2.png" alt="">
+                        <div class="card-active">
+                            <div class="like"><img src="/img/favorite_btn.svg" alt=""></div>
+                            <div class="comment"><img src="/img/comment_btn.svg" alt=""></div>
+                            <div class="share"><img src="/img/share_btn.svg" alt=""></div>
+                        </div>
+                        <div class="card-content">
+                            <h3>#粉絲都在按讚的神物</h3>
+                            <p>按讚數不會騙人👀這些是迷民公認最值得入手的周邊！</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/img/section_card_img3.png" alt="">
+                        <div class="card-active">
+                            <div class="like"><img src="/img/favorite_btn.svg" alt=""></div>
+                            <div class="comment"><img src="/img/comment_btn.svg" alt=""></div>
+                            <div class="share"><img src="/img/share_btn.svg" alt=""></div>
+                        </div>
+                        <div class="card-content">
+                            <h3>#最受喜愛TOP3推し周邊</h3>
+                            <p>排行榜在這裡～迷民口碑最強周邊等你來認領！</p>
+                        </div>
+                    </div>
+            </section>
+            <div class="seemore"><button>see<br>more</button></div>
+        </main>
+        <footer>
+            <div class="top-btn">
+                <a class="top" href="#">top</a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-logo"><img src="/img/logo.png" alt=""></div>
+                <div class="footer-text"><p>© 2025 11150637 祈求畢製順利 All rights reserved.</p></div>
+            </div>
+        </footer>
+    </div>
+    <!-- 登入小視窗 -->
+<div class="login-modal" id="loginModal">
+  <div class="login-modal-content">
+    <button class="close-login" id="closeLogin">✕</button>
+    <h2>用戶登入</h2>
+    <form>
+      <input type="text" placeholder="帳號" required><br>
+      <input type="password" placeholder="密碼" required><br>
+      <button type="submit">登入</button>
+    </form>
+  </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
