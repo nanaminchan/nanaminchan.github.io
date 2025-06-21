@@ -3,6 +3,11 @@ document.querySelector('.logo a').addEventListener('click', function(e) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+document.querySelector('.top').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {
