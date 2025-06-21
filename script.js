@@ -93,6 +93,25 @@ document.getElementById('closeLogin').addEventListener('click', function() {
   document.getElementById('loginModal').classList.remove('active');
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const targets = document.querySelectorAll('.card, .grid');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        // observer.unobserve(entry.target); // 若只要動畫一次可取消註解
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  targets.forEach(target => observer.observe(target));
+});
+
+
+cards.forEach(card => observer.observe(card));
+
 const topBtn = document.querySelector('.top');
 window.addEventListener('scroll', function() {
   if (window.scrollY > 800) { // 捲動超過500px才顯示
@@ -101,3 +120,4 @@ window.addEventListener('scroll', function() {
     topBtn.classList.remove('show');
   }
 });
+
